@@ -1,25 +1,25 @@
     .hex {
-        width:calc(150px);
-        height:calc(150px * 0.57333333333);
+        width:calc(attr(size));
+        height:calc(attr(size) * 0.57333333333);
         background-color: #ccc;
         background-repeat: no-repeat;
         background-position: 50% 50%;            
         background-size: auto calc(150px * 0.57333333333*2);                            
         position: relative;
         float:left;
-        margin:calc(150px * 0.57333333333 / 2 + 0px) 5px;
+        margin:calc(attr(size) * 0.57333333333 / 2 + 0px) 5px;
         text-align:center;
         zoom:1;
     }
             
         .hex.hex-gap {
-            margin-left: calc(150px * 0.57333333333);
+            margin-left: calc(attr(size) * 0.57333333333);
         }
         
         .hex a {
             display:block;
             width: 100%;
-            height:calc(150px * 0.57333333333*2);
+            height:calc(attr(size) * 0.57333333333*2);
             text-indent:-9999em;
             position:absolute;
             top:-50%;
